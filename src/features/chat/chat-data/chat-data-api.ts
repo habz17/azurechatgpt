@@ -32,6 +32,7 @@ export const ChatData = async (props: PromptGPTProps) => {
     lastHumanMessage.content,
     id
   );
+  console.log("relevantDocuments",relevantDocuments)
 
   const chain = loadQAMapReduceChain(chatModel, {
     combinePrompt: defineSystemPrompt(),
